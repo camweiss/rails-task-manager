@@ -1,0 +1,7 @@
+<h1>All my tasks</h1>
+
+<% @tasks.each do |task| %>
+  <h2><%= @task.task %></h2>
+  <p><%= @task.details %></p>
+
+  <% link_to 'Back to task manager', tasks_path %>
